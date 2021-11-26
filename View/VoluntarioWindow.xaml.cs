@@ -20,7 +20,7 @@ namespace Trabalho_Final___Desenvolvimento_de_Sistemas_de_Informação.View
     /// </summary>
     public partial class VoluntarioWindow : Window
     {
-        public VoluntarioDAO voluntarioDAO = new VoluntarioDAO();
+        VoluntarioDAO voluntarioDAO = new VoluntarioDAO();
 
         public VoluntarioWindow()
         {
@@ -30,7 +30,7 @@ namespace Trabalho_Final___Desenvolvimento_de_Sistemas_de_Informação.View
 
         private void GetVoluntarios()
         {
-            voluntariosDataGrid.ItemsSource = (System.Collections.IEnumerable)VoluntarioDAO.GetVoluntario();
+            voluntariosDataGrid.ItemsSource = (System.Collections.IEnumerable)VoluntarioDAO.GetVoluntarios();
         }
 
         private void ExitVoluntario(object sender, RoutedEventArgs e) => Close();

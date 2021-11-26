@@ -44,7 +44,7 @@ namespace Trabalho_Final___Desenvolvimento_de_Sistemas_de_Informação.Data
         {
             using (IDbConnection conn = new Conexao().conn)
             {
-                conn.Execute("UPDATE Alunos SET Endereco=@Endereco, NumEndereco=@NumEndereco, Nome=@Nome, Especializacao=@Especializacao, Cnpj=@Cnpj WHERE Id=@Id", hospital);
+                conn.Execute("UPDATE HospitalCadastro SET ID=@Id, Endereco=@Endereco, NumEndereco=@NumEndereco, Nome=@Nome, Especializacao=@Especializacao, Cnpj=@Cnpj WHERE Id=@Id", hospital);
             }
         }
 

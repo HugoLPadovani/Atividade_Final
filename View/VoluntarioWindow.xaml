@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Trabalho_Final___Desenvolvimento_de_Sistemas_de_Informação.View"
         mc:Ignorable="d"
-        Title="VoluntarioWindow" Height="450" Width="800">
+        Title="VoluntarioWindow" Height="450" Width="600">
 <Window.Resources>
         <CollectionViewSource x:Key="voluntatioViewSource"/>
     </Window.Resources>
@@ -25,7 +25,7 @@
                   RowDetailsVisibilityMode="VisibleWhenSelected"
                   ItemsSource="{Binding Source={StaticResource voluntatioViewSource}}">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Nome" Binding="{Binding nome}" />
+                <DataGridTextColumn Header="Nome" Binding="{Binding Nome}" />
                 <DataGridTextColumn Header="Endereco" Binding="{Binding Endereco}" />
                 <DataGridTextColumn Header="Numero" Binding="{Binding Numero}" />
                 <DataGridTextColumn Header="CPF" Binding="{Binding Cpf}" />

@@ -9,6 +9,7 @@ namespace Trabalho_Final___Desenvolvimento_de_Sistemas_de_Informação.Model
     class Voluntario
     {
         public int Id { get; set; }
+        public int IdHospital { get; set; }
         public string Nome { get; set; }
         public string Endereco { get; set; }
         public string Numero { get; set; }
